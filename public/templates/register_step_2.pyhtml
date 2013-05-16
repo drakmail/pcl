@@ -1,0 +1,50 @@
+<p>Enter desired credentials.</p>
+<div class="span4">
+<?py if error: ?>
+    <div class="error_message">
+        <p>We encounter following errors:</p>
+        <ul>
+            <?py for item in error: ?>
+                <li>#{item}</li>
+            <?py #endfor ?>
+        </ul>
+    </div>
+<?py #endif ?>
+</div>
+<div class="span3">
+    <center>
+        <form class="form-styled" id="registerForm" action="/register/${next_step}" method="post">
+            <div class="control-group">
+                <label class="control-label" for="username">User name:</label>
+                <div class="controls">
+                    <input type="text" name="username">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="password">Password:</label>
+                <div class="controls">
+                    <input type="password" name="password">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="passwordRepeat">Repeat password:</label>
+                <div class="controls">
+                    <input type="password" name="passwordRepeat">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="email">EMail:</label>
+                <div class="controls">
+                    <input type="text" name="email" placeholder="mail@example.com">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="emailRepeat">Repeat EMail:</label>
+                <div class="controls">
+                    <input type="text" name="emailRepeat" placeholder="mail@example.com">
+                </div>
+            </div>
+            <input type="submit" value="Register" class="btn btn-primary btn-large" />
+        </form>
+    </center>
+</div>

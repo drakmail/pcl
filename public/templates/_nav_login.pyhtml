@@ -1,0 +1,29 @@
+<?py if not logged_in[0]: ?>
+    <ul class="nav pull-right">
+        <li class="dropdown pull-right">
+            <a class="btn-warning dropdown-toggle" data-toggle="dropdown" href="#" style="color: white;">
+                <i class="icon-user icon-white"></i> Not logged in
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="/login/">Login</a></li>
+                <li><a href="/register/">Register</a></li>
+            </ul>
+        </li>
+    </ul>
+<?py else: ?>
+    <ul class="nav pull-right">
+        <li class="dropdown pull-right">
+            <a class="btn-success dropdown-toggle" data-toggle="dropdown" href="#" style="color: white;">
+                <img src="#{logged_in[3]}" width="18" /> <b>#{logged_in[1]} <i class='icon-chevron-down'></i></b>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="/dashboard/">Dashboard</a>
+                <li><a href="/teammgr/">Team(s) management</a></li>
+                <hr>
+                <li><a href="/users/#{logged_in[2]}">Profile</a></li>
+                <hr>
+                <li><a href="/login/out/">Log out</a></li>
+            </ul>
+        </li>
+    </ul>
+<?py #endif ?>

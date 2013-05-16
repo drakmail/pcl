@@ -1,0 +1,23 @@
+<?py # -*- coding: utf-8 -*- ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <?py include('_header.pyhtml') ?>
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="hero-unit">
+                    <h1>#{error_header} error!</h1>
+                    <p>We got a <span style="color: #99ff99">#{error_name}</span> error:</p>
+                    <blockquote>#{error_message}</blockquote>
+                    <a href="#" class="btn btn-primary btn-large">Inform administration about this issue &raquo;</a>
+                    <a href="/" class="btn btn-danger btn-large pull-right">&laquo; Back to main page</a>
+                </div>
+            </div>
+        </div>
+        <?py include('_footer.pyhtml') ?>
+    </div>
+    </body>
+</html>

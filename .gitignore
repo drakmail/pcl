@@ -1,0 +1,33 @@
+# PyDev
+.project
+.pydevproject
+.settings
+
+# Python caches
+__pycache__
+
+*.py[co]
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+
+# Settings for development or even runtime.
+9*.conf
+
+# Logs
+logs/*
+
+# Install lock
+install.lock
+
+# Deploy script
+deploy.sh

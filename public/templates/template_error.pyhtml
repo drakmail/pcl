@@ -1,0 +1,22 @@
+<?py # -*- coding: utf-8 -*- ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <?py include('_header.pyhtml') ?>
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="hero-unit">
+                    <h1>Templates error!</h1>
+                    <p>Template <span style="color: #ff8888;"><b>#{template_name}</b></span> got a <span style="color: #99ff99">#{error_name}</span> error:</p>
+                    <blockquote>#{error_message}</blockquote>
+                    <p><a href="mailto:#{admin_email}?Subject=There%20a%20&laquo;#{error_name}&raquo;%20template%20error:%20#{current_path}&body=Dear%20Administration,%20I've%20encounter%20this%20error%20while%20trying%20to%20access%20#{current_path}.%0d%0dError%20message:%0d%0d%20%20%20%20#{error_message}%0d%0dTemplate:%20#{template_name}%0d%0dMy%20IP%20address:%20#{ip_address}%0dMy%20username:%20#{logged_in[1]}" class="btn btn-primary btn-large">Inform administration about this issue &raquo;</a></p>
+                </div>
+            </div>
+        </div>
+        <?py include('_footer.pyhtml') ?>
+    </div>
+    </body>
+</html>

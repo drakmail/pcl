@@ -1,0 +1,7 @@
+<link rel="stylesheet" type="text/css" href="/templates/bootstrap/css/bootstrap.css" media="screen" />
+<link href="/templates/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="/templates/style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<TITLE>${title}</TITLE>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="/templates/bootstrap/js/bootstrap.js"></script>

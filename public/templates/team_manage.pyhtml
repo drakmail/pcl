@@ -1,0 +1,35 @@
+<?py # -*- coding: utf-8 -*- ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <?py include('_header.pyhtml') ?>
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+    <?py include('_navigation.pyhtml') ?>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="hero-unit">
+                    <h1>Teams management</h1>
+                    <p>Your primary team: #{primary_team}
+                </div>
+                <div class="row-fluid">
+                    <div class="span2">
+                        <?py include('team_manage_sidebar.pyhtml') ?>
+                    </div>
+                    <div class="span9">
+                        <?py if team_action == "index": ?>
+                            <?py include('team_manage_index.pyhtml') ?>
+                        <?py elif team_action == "create": ?>
+                            <?py include('team_manage_create.pyhtml') ?>
+                        <?py elif team_action == "rules": ?>
+                            <?py include('team_manage_rules.pyhtml') ?>
+                        <?py #endif ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?py include('_footer.pyhtml') ?>
+    </div>
+    </body>
+</html>

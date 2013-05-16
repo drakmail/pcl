@@ -1,0 +1,11 @@
+<div class="hero-unit">
+    <div class="row-fluid">
+        <div class="span1 user_avatar">
+            <img src="#{avatar}?s=128" />
+        </div>
+        <div class="span7 user_info">
+            <h1>#{user_info[1]}</h1>
+            Registered: #{user_info[3]}
+        </div>
+    </div>
+</div>

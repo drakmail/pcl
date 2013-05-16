@@ -1,0 +1,15 @@
+Good time of day, {username}!
+
+Someone provided your e-mail while registering on
+{site_name}. If it was you, then click on link below
+to activate your account:
+
+{site_address}/activate/{activation_hash}
+
+If that wasn't you, then it's safe to ignore this
+mail.
+
+--
+Best regards,
+Administration of {site_name}
+{site_address}

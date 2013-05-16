@@ -1,0 +1,42 @@
+<?py # -*- coding: utf-8 -*- ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <?py include('_header.pyhtml') ?>
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+    <?py include('_navigation.pyhtml') ?>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="hero-unit">
+                    <h1>About #{site_name}</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span12">
+                #{page_data}
+            </div>
+        </div>
+        <hr>
+        <div class="span12">
+            <p>#{site_name} is powered by <a href="http://dev.urtrussia.org/projects/pcl">PCL</a> - Python-powered CGI Leagues script version <b>#{pcl_version}_#{git_rev_id} build #{git_rev_count} from #{git_last_commit_date}
+            <?py if git_modified: ?>
+                <i>[locally modified]</i>
+            <?py #endif ?>
+            </b>.</p>
+            <p>This script is licensed under Terms and Conditions of <a href="http://www.gnu.org/licenses/gpl.txt">GNU General public license version 3</a>
+            or any higher.</p>
+
+            <p>As this is Free and Open-Source software, you can:</p>
+            <ul>
+                <li><a href="http://dev.urtrussia.org/projects/pcl/repository">Browse and download sources</a></li>
+                <li>Extend PCL <i>(Link will be here soon)</i></li>
+                <li>Support PCL <i>(Link will be here soon)</i></li>
+            </ul>
+        </div>
+    </div>
+    <?py include('_footer.pyhtml') ?>
+    </body>
+</html>

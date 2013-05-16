@@ -1,0 +1,12 @@
+<div class="navbar-bottom row-fluid navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <p class="text-center" style="padding-top: 9px; color: white;">PCL, version #{pcl_version}. &copy; 2013,
+            <a href="http://pztrn.name/" target="_blank">Stanislav N. aka pztrn</a>. Made with power of 
+            <a href="http://python.org" target="_blank">Python 3</a>,
+            <a href="http://www.kuwata-lab.com/tenjin/" target="_blank">Tenjin</a>
+            and <a href="http://twitter.github.io/bootstrap/" target="_blank">Twitter Bootstrap</a>.</p>
+        </div>
+    </div>
+</div>
+

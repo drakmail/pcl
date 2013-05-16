@@ -1,0 +1,2 @@
+<p>Thank you for registration, <b>#{username}</b>! Activation email was sent to email provided in previous step. This email contains link for account activation.</p>
+<p><b>Note:</b> you can't access your account before activation.</p>

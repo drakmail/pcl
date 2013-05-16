@@ -1,0 +1,15 @@
+<ul class="nav nav-list">
+    <li class="nav-header">Team management menu</li>
+    <li><a href="/teammgr/">TM home</a></li>
+    <li><a href="/teammgr/rules/">Team rules</a></li>
+    <li class="nav-header">Teams</li>
+    <?py for team in teams: ?>
+        <?py if team.split("###")[2] == "admin": ?>
+            <li><a href="#{team.split("###")[1]}"><i class="icon-user icon-white"></i> #{team.split("###")[0]}</a></li>
+        <?py else: ?>
+            <li><a href="#{team.split("###")[1]}"><i class="icon-circle-arrow-right icon-white"></i> #{team.split("###")[0]}</a></li>
+        <?py #endif ?>
+    <?py #endfor ?>
+    <li class="nav-header">Actions</li>
+    <li><a href="/teammgr/create/">Create new team</a></li>
+</ul>

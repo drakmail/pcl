@@ -1,0 +1,8 @@
+<p>Before creating process continues, you have to read this rules <b>carefully</b>!</p>
+<div class="rules">
+    #{rules}
+</div>
+<p>By clicking <b>Accept</b> button, you automagically agree with these rules.</p>
+<center>
+    <input type="submit" value="Accept" class="btn btn-primary btn-large" />
+</center>

@@ -1,0 +1,25 @@
+<?py # -*- coding: utf-8 -*- ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <?py include('_header.pyhtml') ?>
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+    <?py include('_navigation.pyhtml') ?>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="hero-unit">
+                <h2>401... Four Zero One... Where's your authorization?</h2>
+                <p>You are not authorized to view this page.</p>
+                <p>Possible solutions:</p>
+                <ul>
+                    <li>You are not logged in. <a href="/login/">Log in</a> in order to access this page.</li>
+                    <li>Administrators locked out this page for some reason. If so - they already working. Don't bother them.</li>
+                    <li>This can be a error. Really! So do not hesitate and <a href="mailto:#{admin_email}?Subject=There%20a%20&laquo;401&raquo;%20error:%20#{current_path}&body=Dear%20Administration,%20I've%20encounter%20this%20error%20while%20trying%20to%20access%20#{current_path}.%0d%0dMy%20IP%20address:%20#{ip_address}%0dMy%20username:%20#{logged_in[1]}">send a message to administration</a> (note: this will send your IP address and username, if you're logged in!).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <?py include('_footer.pyhtml') ?>
+    </body>
+</html>

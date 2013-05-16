@@ -1,0 +1,67 @@
+PCL - Python and CGI powered league script.
+
+Copyright (c) 2013, Stanislav N. aka pztrn <pztrn@pztrn.name>
+
+Distributed under Terms and Conditions of GNU General Public License
+version 3 or any higher version you may want.
+
+You should receive a copy of GNU GPL v3 license. If this isn't so,
+you can obtain license text here: http://www.gnu.org/licenses/gpl.txt.
+And excuse me my sometimes failing memory :)
+
+**************************************
+* CONTENTS                           *
+*                                    *
+* 1. What is PCL?                    *
+* 2. Dependencies                    *
+* 3. Installation with CGI mode      *
+* 4. Installation with WSGI mode     *
+* 5. Bug reporting and patch sending *
+**************************************
+
+1. What is PCL?
+===============
+PCL is a Python and CGI/WSGI powered League/Tournament script, designed
+to be as simple as possible.
+
+This script was written due to lack of good and free League scripts.
+
+2. Dependencies.
+================
+PCL written with help and power of Python 3, and be sure, that you're
+using version 3.2 or any higher (at least, it was tested on Python
+3.2 and 3.3).
+
+PCL uses MySQL/MariaDB as database, so you have to install pymysql
+(or python3-mysql, or whatever it named in your distribution).
+
+As template engine PCL uses Tenjin template engine. Tenjin 1.11
+is bundled with PCL.
+
+3. Installation with CGI mode.
+==============================
+1. Upload files to your webserver.
+2. Make sure that you have an ability to change server variables.
+3. Rename htaccess.dist to .htaccess.
+4. Launch http://<your server>/install in your browser.
+5. Proceed with this wizard.
+6. ...
+7. PROFIT!
+
+4. Installation with WSGI mode.
+===============================
+Right now WSGI mode can be configured only with mod_proxy help.
+
+1. Upload files to your webserver.
+2. Make sure that you have an ability to change server variables.
+3. Chech hostname and port settings on last line of wsgi.py.
+4. Launch "wsgi_mode.sh".
+5. Configure your vhost to proxify host and port used by wsgi.py.
+6. Launch http://<your server>/install in your browser.
+7. Proceed with this wizard.
+8. ...
+9. PROFIT!
+
+5. Bug reporting and patch sending.
+===================================
+Visit PCL bugtracker: http://dev.urtrussia.org/projects/pcl

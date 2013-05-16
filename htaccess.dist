@@ -1,0 +1,13 @@
+AddHandler cgi-script .py
+AddDefaultCharset utf-8
+
+Options +ExecCGI
+
+# Enable options below only if you want to run PCL in CGI mode!
+#DirectoryIndex index.py
+
+#RewriteEngine on
+#RewriteBase /
+#RewriteCond %{REQUEST_FILENAME} !-f  
+#RewriteCond %{REQUEST_FILENAME} !-d  
+#RewriteRule ^ index.py [L]

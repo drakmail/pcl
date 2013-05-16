@@ -1,0 +1,10 @@
+<h2>Welcome!</h2>
+<p>Welcome to team manager page!</p>
+
+<h2>What's going on here?</h2>
+<p>This page dedicated to your teams, where you participated or what you created.</p>
+<p>If you're just a player in team, there will be <i class="icon-circle-arrow-right icon-white"></i> icon. If you're creator, trustee or moderator in team, there will be <i class="icon-user icon-white"></i> icon.</p>
+<p>All team statictics will be available when you enter your team management corner.</p>
+
+<h2>Wanna create new team?</h2>
+<p>Make sure that you've read <a href="/teammgr/rules/">team creation rules</a> before you will proceed. Rules contains life-needed information about teams creation.</p>

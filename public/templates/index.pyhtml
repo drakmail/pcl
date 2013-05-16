@@ -1,0 +1,50 @@
+<?py # -*- coding: utf-8 -*- ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <?py include('_header.pyhtml') ?>
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+    <?py include('_navigation.pyhtml') ?>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="hero-unit">
+                    <h1>Welcome to #{site_name}!</h1>
+                    <?py if logged_in[0]: ?>
+                        <p>Here goes some statistics about logged in player and his team.</p>
+                        <p><a href="/dashboard/" class="btn btn-primary btn-large">Continue to your home page &raquo;</a></p>
+                    <?py else: ?>
+                        <p>Log in or register to continue fraggin'!</p>
+                        <p><a href="/login/" class="btn btn-primary btn-large">Login or register &raquo;</a></p>
+                    <?py #endif ?>
+                </div>
+                <div class="row-fluid">
+                    <div class="span3">
+                        <h2>Past matches</h2>
+                        <p>Past matches info</p>
+                        <p><a class="btn" href="#">View all &raquo;</a></p>
+                    </div><!--/span-->
+                    <div class="span3">
+                        <h2>Now playing!</h2>
+                        <p>Now playing matches</p>
+                        <p><a class="btn " href="#">View all &raquo;</a></p>
+                    </div><!--/span-->
+                    <div class="span3">
+                        <h2>Future matches</h2>
+                        <p>Future matches info</p>
+                        <p><a class="btn" href="#">View all &raquo;</a></p>
+                    </div><!--/span-->
+                    <div class="span3">
+                        <h2>News</h2>
+                        <p>Here goes the news...</p>
+                        <p><a class="btn" href="#">View all &raquo;</a></p>
+                    </div>
+                    </div><!--/span-->
+                </div><!--/row-->
+            </div>
+        </div>
+        <?py include('_footer.pyhtml') ?>
+    </div>
+    </body>
+</html>

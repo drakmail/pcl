@@ -1,0 +1,42 @@
+<p>Please, enter database credentials.</p>
+<p><i>Note: only MySQL is supported for now.</i></p>
+<center>
+    <form class="form-horizontal form-styled">
+        <div class="control-group">
+            <label class="control-label" for="databaseHostname">Hostname:</label>
+            <div class="controls">
+                <input type="text" id="databaseHostname" placeholder="Usually localhost">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="databasePort">Port:</label>
+            <div class="controls">
+                <input type="text" id="databasePort" placeholder="Usually 3306">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputDb">Database:</label>
+            <div class="controls">
+                <input type="password" id="inputDb" placeholder="Database name">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputDbUser">User:</label>
+            <div class="controls">
+                <input type="password" id="inputDbUser" placeholder="Database user name">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputDbUserPassword">User password:</label>
+            <div class="controls">
+                <input type="password" id="inputDbUserPassword" placeholder="Database user password">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputDbPrefix">Database prefix:</label>
+            <div class="controls">
+                <input type="password" id="inputDbUserPassword" placeholder="pcl_">
+            </div>
+        </div>
+    </form>
+</center>

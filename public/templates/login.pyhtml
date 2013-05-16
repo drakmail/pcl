@@ -1,0 +1,50 @@
+<?py # -*- coding: utf-8 -*- ?>
+<!DOCTYPE html>
+<html>
+    <?py if state == "success": ?>
+        <?py for item in cookie: ?>
+            <meta http-equiv="Set-Cookie" content="${item}">
+        <?py #endfor ?>
+    <?py #endif ?>
+    <head>
+        <?py include('_header.pyhtml') ?>
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+    <?py include('_navigation.pyhtml') ?>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="hero-unit">
+                    <?py if action == "login": ?>
+                        <h1>Log In to #{site_name}</h1>
+                    <?py else: ?>
+                        <h1>Log Out from #{site_name}</h1>
+                    <?py #endif ?>
+                    <p>#{credentials_status}</p>
+                </div>
+            </div>
+        </div>
+            <div class="row-fluid">
+                <div class="span4">
+                </div>
+                <div class="span3">
+                    <?py if state == "beginning" or state == "fail": ?>
+                        <center>
+                            <?py include("login_form.pyhtml") ?>
+
+                            <p>First time here? <a href="/register/">Create an account!</a></p>
+                        </center>
+                    <?py else: ?>
+                        <?py if action == "login": ?>
+                            <?py include("login_success.pyhtml") ?>
+                        <?py else: ?>
+                            <?py include("logout_success.pyhtml") ?>
+                        <?py #endif ?>
+                    <?py #endif ?>
+                </div>
+            </div>
+        </div>
+        <?py include('_footer.pyhtml') ?>
+    </div>
+    </body>
+</html>

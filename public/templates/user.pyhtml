@@ -1,0 +1,21 @@
+<?py # -*- coding: utf-8 -*- ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <?py include('_header.pyhtml') ?>
+    </head>
+    <body data-spy="scroll" data-target=".navbar">
+    <?py include('_navigation.pyhtml') ?>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <?py if template_action == "list": ?>
+                <?py include('user_list.pyhtml') ?>
+            <?py #endif ?>
+            <?py if template_action == "user": ?>
+                <?py include('user_info.pyhtml') ?>
+            <?py #endif ?>
+        </div>
+    </div>
+    <?py include('_footer.pyhtml') ?>
+    </body>
+</html>

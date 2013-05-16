@@ -1,0 +1,39 @@
+<div class="span12">
+    <div class="hero-unit">
+        <h1>#{site_name} users list</h1>
+    </div>
+    <table class="table table-bordered table-hover table-condensed">
+        <thead>
+            <td>
+                Name
+            </td>
+            <td>
+                Screen name
+            </td>
+            <td>
+                Registered
+            </td>
+            <td>
+                Country
+            </td>
+        </thead>
+        <tbody>
+        <?py for item in users: ?>
+        <tr>
+            <td>
+                <img src="#{item.split("###")[5]}" width="18" /> <a href="/users/#{item.split("###")[0]}">#{item.split("###")[1]}</a>
+            </td>
+            <td>
+                #{item.split("###")[2]}
+            </td>
+            <td>
+                #{item.split("###")[3]}
+            </td>
+            <td>
+                #{item.split("###")[4]}
+            </td>
+        </tr>
+        <?py #endfor ?>
+        </tbody>
+    </table>
+</div>

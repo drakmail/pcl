@@ -1,0 +1,45 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand" href="#{root}">#{site_name}</a>
+            <?py if hide_navbar_links: ?>
+                <?py pass ?>
+            <?py else: ?>
+                <div class="nav-collapse collapse">
+                    <?py include('_nav_login.pyhtml') ?>
+                    <ul class="nav" role="navigation">
+                        <div class="btn-group">
+                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                Tournaments
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Test tournament</a></li>
+                            </ul>
+                        </div>
+                        <?py if logged_in[0]: ?>
+                            <div class="btn-group">
+                                <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                                    My teams
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">My team</a></li>
+                                </ul>
+                            </div>
+                        <?py #endif ?>
+                        <li class="divider-vertical"></li>
+                        <?py for item in links: ?>
+                            <?py if item is not None: ?>
+                                #{item}
+                                <li class="divider-vertical"></li>
+                            <?py #endif ?>
+                        <?py #endfor ?>
+                        <li><a href="http://urtrussia.org/" target="_blank">Forum</a></li>
+                        <li class="divider-vertical"></li>
+                    </ul>
+                </div>
+            <?py #endif ?>
+        </div>
+    </div>
+</div>
